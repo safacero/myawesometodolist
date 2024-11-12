@@ -7,7 +7,9 @@ export default defineConfig({
     plugins: [react()],
     server: {
         fs: {
-            allow: [searchForWorkspaceRoot(process.cwd()), 'C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/Extensions/Microsoft/JavaScript/TestFrameworks/Vitest/']
+            allow: [searchForWorkspaceRoot(process.cwd()),
+                // Substitute this value for the path of your own Visual Studio installation.
+                'C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/Extensions/Microsoft/JavaScript/TestFrameworks/Vitest/']
         }
     },
     test: {
